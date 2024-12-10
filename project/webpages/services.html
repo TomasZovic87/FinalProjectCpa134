@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../css/webpageStyles.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <h1>SNEAKER HEAT</h1>
+    <header>
+        <nav>
+            <a href="../webpages/index.html">Home</a>
+            <a href="../webpages/services.html">Services</a>
+            <a href="../webpages/contact.html">Contact</a>
+            <a href="../webpages/aboutUs.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Services</h2>
+        <p>Below is a list of services we offer. You can sort, search, and paginate the table for easy navigation.</p>
+        
+        <table id="services-table" class="display">
+            <thead>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sneaker Cleaning</td>
+                    <td>Professional cleaning for all types of sneakers.</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Custom Design</td>
+                    <td>Unique sneaker customization tailored to your style.</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Authentication</td>
+                    <td>Verify the authenticity of rare or high-value sneakers.</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Sneaker Repair</td>
+                    <td>Fix damaged sneakers, from stitching to sole replacements.</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td>Restoration</td>
+                    <td>Restore old sneakers to their original condition, including color touch-ups and cleaning.</td>
+                    <td>$40</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Socials</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">X</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#services-table').DataTable({
+                paging: true,
+                searching: true,
+                ordering: true,
+                info: true
+            });
+        });
+    </script>
+</body>
+</html>
